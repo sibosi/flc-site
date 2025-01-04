@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Pogány Marcell",
+    "position": "Alapító, elnök",
+    "image": "/people/pogany-marcell.jpg",
+    "bio": "A nevem Pogány Marcell, középiskolás diák vagyok, és érdeklődési köreim közé tartozik a pénzügy, a geopolitika és a pszichológia. Az Eötvös József Gimnázium Financial Literacy Club (FLC) elnökeként arra törekszem, hogy megteremtsem azokat a lehetőségeket, amelyeket gólyaként hiányoltam, mint közgazdaságtan világában érdeklődő diák.\nNemrégiben elvégeztem a Yale Egyetem online Pénzügyi Piacok kurzusát, amely mélyítette a globális gazdaságokkal és befektetési stratégiákkal kapcsolatos ismereteimet. Emellett a MUN klub helyettes igazgatójaként szolgálok, ahol lehetőségem volt fejleszteni a kommunikációs és nyilvános beszéd készségeimet.\nCélom, hogy tartós hálózatot építsek ki olyan diákokkal, akik érdeklődnek a pénzügyi világ iránt, és olyan lehetőségeket teremtsünk, amelyek most és a jövőben is hasznunkra válnak."
+  },
+  {
+    "name": "Balogh Bendegúz",
+    "position": "Alapító, alelnök",
+    "image": "/people/balogh-bendeguz.jpg",
+    "bio": "Balogh Bendegúz vagyok, az Eötvös József Gimnázium 11.C osztályos tanulója, a Financial Literacy Club egyik alapítója és alelnöke. Régóta érdekel a tőzsde és a pénzügyi világ működése, ezért különösen fontos számomra, hogy a klub által nemcsak magam, hanem más diákok pénzügyi ismereteit is fejlesszem, hogy együtt magabiztosabban mozogjunk ezen a területen. Két éve aktívan részt veszek a Model United Nations programokban, és szeptembertől az amerikai nagykövetség ifjúsági tanácsának tagjaként folytatom a munkámat, hogy tovább szélesítsem látóköröm a pénzügyek és a globális kapcsolatok terén."
+  },
+  {
+    "name": "Bartók Márton",
+    "position": null,
+    "image": "/people/bartok-marton.jpg",
+    "bio": "Bartók Márton vagyok, a 11. C osztály tanulója és a diákönkormányzat tagja. Alig várom, hogy együtt mélyedhessünk el a pénzügyek világában, és segítő kezet nyújthatok tudásotok bővítésében és készségeitek fejlesztésében. Mint a klub kapcsolattartási szakembere, én is mindent megteszek annak érdekében, hogy a foglalkozások élvezetesek és interaktívak maradjanak, miközben a lehető legtöbb információval szolgáljunk nektek."
+  },
+  {
+    "name": "Benkő Zétény",
+    "position": null,
+    "image": "/people/benko-zeteny.png",
+    "bio": "Meggyőződésem, hogy a pénzügyi műveltség egy olyan dolog, amellyel minden egyes embernek rendelkeznie kell, ha boldogulni szeretne a mai világban. Szerencsére ezt már hamar, 11-12 éves koromban felismertem és a pénzügyek világa iránti lelkesedésem azóta is töretlen. Nyilvánvaló, hogy a mai fiatalok hiányt szenvednek a pénzzel kapcsolatos oktatásból és mint egy már létező cég társtulajdonosa, biztos vagyok benne, hogy a Financial Literacy Club erre a problémára kínál megoldást."
+  },
+  {
+    "name": "Sipos Petra",
+    "position": null,
+    "image": "/people/sipos-petra.jpg",
+    "bio": "Az Eötvös 11. évfolyamos diákja vagyok, érdekelnek a nemzetközi kapcsolatok és a társadalomtudományok. Szabadidőmet gyakran töltöm klasszikus gitározással és a MUN klub vezetésével. Meggyőződésem, hogy a pénzügyi ismeretekre nagyobb hangsúlyt kéne helyezni az oktatásunkban, hiszen olyan alapvető készségeket nyújtanak, amelyek egész életünk során értékesek lesznek."
+  },
+  {
+    "name": "Smulovics Áron",
+    "position": null,
+    "image": "/people/smulovics-aron.jpg",
+    "bio": "Nagyjából hetedikes korom óta foglalkoztat a pénzügyek és vállalkozások világa. Puszta kíváncsiságból és nemzetközi konferenciák révén is sikerült betekintést nyernem a pénzügyi folyamatok globális rendszerébe. Úgy gondolom, hogyha önszántunkból tanulunk a minket körülvevő világ valódi működéséről (beleértve a pénzügyeket is), az segít egy szabadabb életet élni."
+  }
+]

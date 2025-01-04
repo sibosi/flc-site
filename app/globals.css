@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 :root {
+  --zoom: 0.5rem;
   --background: #ffffff;
   --foreground: #171717;
-}
+  --primary: #0f2764;
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  @media (prefers-color-scheme: dark) {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+
+  @media (min-width: 640px) {
+    --zoom: 1rem;
   }
 }
 
@@ -18,4 +22,39 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: calc(2rem + var(--zoom));
+  font-weight: 600;
+}
+
+h2 {
+  font-size: calc(1.5rem + var(--zoom));
+  font-weight: 500;
+}
+
+h3 {
+  font-size: calc(1.25rem + var(--zoom));
+  font-weight: 500;
+}
+
+h4 {
+  font-size: calc(1.25rem + var(--zoom));
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 350;
+}
+
+h5 {
+  font-size: calc(1rem + var(--zoom));
+  font-weight: 600;
+}
+
+h6 {
+  font-size: calc(1rem + var(--zoom));
+  font-weight: 200;
 }
