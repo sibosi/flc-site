@@ -1,3 +1,5 @@
+import Alert from "@/components/ui/alert";
+
 type EventType = {
   date: string;
   title: string;
@@ -29,6 +31,10 @@ export default function Home() {
   return (
     <div>
       <h1>Financial Literacy Club - EJG</h1>
+      <Alert>
+        <p>Minden csütörtökön 15:45-től a földrajz (10.) teremben.</p>
+        <p>Téged is várunk a Financial Literacy Club-ban!</p>
+      </Alert>
       <div>
         <h2>Üdvözlünk!</h2>
         <p>Minden csütörtökön 15:45-től a földrajz (10.) teremben.</p>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar2";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,14 +23,14 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body
-        className={`min-h-screen bg-background bg-selfprimary-bg font-sans antialiased light:bg-white ${fontOutfit.variable} antialiased`}
+        className={`bg-selfprimary-bg min-h-screen bg-background font-sans antialiased light:bg-white ${fontOutfit.variable} antialiased`}
       >
-        <Navbar />
-        <main className="px-3 md:px-6 lg:px-12 container mx-auto max-w-7xl flex-grow bg-selfprimary-bg   pt-4">
+        <main className="bg-selfprimary-bg container mx-auto max-w-7xl flex-grow px-3 pt-4 md:px-6 lg:px-12">
+          <Navbar />
           {children}
         </main>
 
-        <footer className="flex justify-center items-center gap-4 p-4">
+        <footer className="flex items-center justify-center gap-4 p-4">
           <Link href="github.com/sibosi" className="inline-flex gap-2">
             <Image
               src="/icons/github.svg"
