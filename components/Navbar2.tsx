@@ -36,14 +36,14 @@ export default function App() {
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="pr-3 sm:hidden" justify="center">
         <NavbarBrand>
           <FLCLogo />
           <p className="font-bold text-inherit">FLC</p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarBrand>
           <FLCLogo />
           <p className="font-bold text-inherit">FLC</p>

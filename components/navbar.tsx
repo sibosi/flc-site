@@ -12,11 +12,11 @@ const pages = [
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-transparent ">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <div className="w-full bg-transparent">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center gap-2">
+            <div className="flex flex-shrink-0 items-center gap-2">
               <Image src={Logo} alt="FLC Logo" width={50} height={50} />
               FLC - EJG
             </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
                   <a
                     key={page.href}
                     href={page.href}
-                    className="text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-100"
+                    className="text-gray-900 hover:text-gray-900 dark:text-gray-100 dark:hover:text-gray-100"
                   >
                     {page.label}
                   </a>
