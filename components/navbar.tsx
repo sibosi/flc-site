@@ -11,10 +11,18 @@ import {
   Link,
 } from "@heroui/react";
 import Image from "next/image";
-import Logo from "@/public/logo-transparent.svg";
+import Logo from "@/public/logo-transparent-white.svg";
 
 const FLCLogo = () => {
-  return <Image src={Logo} alt="FLC Logo" width={50} height={50} />;
+  return (
+    <Image
+      className="fill-white"
+      src={Logo}
+      alt="FLC Logo"
+      width={50}
+      height={50}
+    />
+  );
 };
 
 const pages = [
@@ -34,7 +42,12 @@ export default function PageNavbar() {
   }, []);
 
   return (
-    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-selfprimary-900 text-white"
+    >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -55,7 +68,7 @@ export default function PageNavbar() {
         </NavbarBrand>
         {pages.map((page) => (
           <NavbarItem key={page.href} isActive={page.href === currentPage}>
-            <Link color="foreground" href={page.href}>
+            <Link className="text-white" href={page.href}>
               {page.label}
             </Link>
           </NavbarItem>

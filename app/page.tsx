@@ -28,17 +28,17 @@ const events: EventCardProps[] = [
 export default function Home() {
   return (
     <div className="space-y-4">
-      <h1 className="title my-12 text-center lg:text-5xl">
+      <h1 className="show my-12 text-center lg:text-5xl">
         Financial Literacy Club
       </h1>
-      <Alert>
+      <Alert className="show animationDelay-100">
         <h2>Üdvözlünk!</h2>
         <p>Minden csütörtökön 15:45-től a földrajz (10.) teremben.</p>
         <p>Téged is várunk a Financial Literacy Club-ban!</p>
       </Alert>
 
       <div>
-        <h2>Események</h2>
+        <h2 className="show animationDelay-200">Események</h2>
         <div className="my-2 flex flex-wrap justify-around">
           {events.map((event, index) => (
             <EventCard
@@ -47,6 +47,7 @@ export default function Home() {
               description={event.description}
               key={index}
               image={event.image}
+              className={`show animationDelay-${index * 100 + 300}`}
             />
           ))}
         </div>

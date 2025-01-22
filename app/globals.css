@@ -70,10 +70,48 @@ h6 {
   font-weight: 200;
 }
 
-.title {
+.show {
   font-size: 2rem;
   color: black;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animationDelay-100 {
+  animation-delay: 100ms;
+}
+
+.animationDelay-200 {
+  animation-delay: 200ms;
+}
+
+.animationDelay-300 {
+  animation-delay: 300ms;
+}
+
+.animationDelay-400 {
+  animation-delay: 400ms;
+}
+
+.animationDelay-500 {
+  animation-delay: 500ms;
+}
+
+.animationDelay-600 {
+  animation-delay: 600ms;
+}
+
+.animationDelay-700 {
+  animation-delay: 700ms;
+}
+
+.animationDelay-800 {
+  animation-delay: 800ms;
+}
+
+.animationDelay-900 {
+  animation-delay: 900ms;
 }
 
 @keyframes fadeIn {
