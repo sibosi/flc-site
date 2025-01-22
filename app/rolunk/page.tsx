@@ -12,10 +12,10 @@ const people_data: PeopleType[] = people_json;
 
 export default function Rolunk() {
   return (
-    <div>
+    <div className="space-y-4">
       <h1>Rólunk</h1>
-      <div>
-        <h2>Bemutatkozás - mi az FLC?</h2>
+      <div className="space-y-4">
+        <h2>Mi az FLC?</h2>
         <p>
           A Financial Literacy Club egy új kezdeményezés az iskolánkban,
           amelynek lehetőséget biztosít a diákok pénzügyi és gazdasági
@@ -48,24 +48,30 @@ export default function Rolunk() {
       </div>
       <div>
         <h2>Tagjaink</h2>
-        <ul>
+        <div className="space-y-4">
           {people_data.map((person, index) => (
-            <li key={index + person.name} className="mb-4 flex gap-4">
+            <div
+              key={index + person.name}
+              className="my-4 flex flex-col gap-4 lg:flex-row"
+            >
               <Image
                 src={person.image}
                 alt={person.name}
                 width={200}
                 height={200}
-                className="object-contain"
+                className="mx-auto object-contain"
               />
               <div>
-                <h3>{person.name}</h3>
-                <p>{person.position}</p>
+                <h3 className="text-center">{person.name}</h3>
+                <p className="mb-2 text-center">{person.position}</p>
                 <p>{person.bio}</p>
               </div>
-            </li>
+              {index < people_data.length - 1 && (
+                <hr className="my-4 border-gray-300" />
+              )}
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
