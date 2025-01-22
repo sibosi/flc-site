@@ -1,6 +1,21 @@
-import Image from "next/image";
+"use client";
 import React from "react";
-import Logo from "../public/logo.svg";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarMenuToggle,
+  NavbarMenuItem,
+  NavbarMenu,
+  NavbarContent,
+  NavbarItem,
+  Link,
+} from "@heroui/react";
+import Image from "next/image";
+import Logo from "@/public/logo-transparent.svg";
+
+const FLCLogo = () => {
+  return <Image src={Logo} alt="FLC Logo" width={50} height={50} />;
+};
 
 const pages = [
   { href: "/", label: "Főoldal" },
@@ -10,34 +25,59 @@ const pages = [
   { href: "/oregdiak-progran", label: "Öregdiák program" },
 ];
 
-const Navbar = () => {
-  return (
-    <div className="w-full bg-transparent">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <div className="flex flex-shrink-0 items-center gap-2">
-              <Image src={Logo} alt="FLC Logo" width={50} height={50} />
-              FLC - EJG
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                {pages.map((page) => (
-                  <a
-                    key={page.href}
-                    href={page.href}
-                    className="text-gray-900 hover:text-gray-900 dark:text-gray-100 dark:hover:text-gray-100"
-                  >
-                    {page.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
-};
+export default function PageNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [currentPage, setCurrentPage] = React.useState<string>();
 
-export default Navbar;
+  React.useEffect(() => {
+    setCurrentPage(window.location.pathname);
+  }, []);
+
+  return (
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent className="sm:hidden" justify="start">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
+      </NavbarContent>
+
+      <NavbarContent className="pr-3 sm:hidden" justify="center">
+        <NavbarBrand>
+          <FLCLogo />
+          <p className="font-bold text-inherit">FLC</p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+        <NavbarBrand>
+          <FLCLogo />
+          <p className="font-bold text-inherit">FLC</p>
+        </NavbarBrand>
+        {pages.map((page) => (
+          <NavbarItem key={page.href} isActive={page.href === currentPage}>
+            <Link color="foreground" href={page.href}>
+              {page.label}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
+
+      <NavbarContent justify="end"></NavbarContent>
+
+      <NavbarMenu>
+        {pages.map((item) => (
+          <NavbarMenuItem key={`${item.label}-label`}>
+            <Link
+              className="w-full"
+              color="foreground"
+              href={item.href}
+              size="lg"
+            >
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
+  );
+}
