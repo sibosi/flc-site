@@ -28,7 +28,9 @@ const events: EventCardProps[] = [
 export default function Home() {
   return (
     <div className="space-y-4">
-      <h1 className="title">Financial Literacy Club - EJG</h1>
+      <h1 className="title my-12 text-center lg:text-5xl">
+        Financial Literacy Club
+      </h1>
       <Alert>
         <h2>Üdvözlünk!</h2>
         <p>Minden csütörtökön 15:45-től a földrajz (10.) teremben.</p>
@@ -37,7 +39,7 @@ export default function Home() {
 
       <div>
         <h2>Események</h2>
-        <div className="flex flex-wrap justify-around">
+        <div className="my-2 flex flex-wrap justify-around">
           {events.map((event, index) => (
             <EventCard
               title={event.title}

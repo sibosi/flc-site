@@ -16,7 +16,7 @@ export function EventCard({
   image,
 }: Readonly<EventCardProps>) {
   return (
-    <Card className="max-lg:my-2 lg:w-1/4">
+    <Card className="max-lg:my-2 lg:w-[30%]">
       <div className="items-center gap-4 sm:flex lg:block">
         <div className="relative h-48 w-full sm:h-full sm:w-48 lg:h-48 lg:w-full">
           <Image

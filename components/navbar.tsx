@@ -44,14 +44,14 @@ export default function PageNavbar() {
       <NavbarContent className="pr-3 sm:hidden" justify="center">
         <NavbarBrand>
           <FLCLogo />
-          <p className="font-bold text-inherit">FLC</p>
+          <p className="font-bold text-inherit">FLC - EJG</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarBrand>
           <FLCLogo />
-          <p className="font-bold text-inherit">FLC</p>
+          <p className="font-bold text-inherit">FLC - EJG</p>
         </NavbarBrand>
         {pages.map((page) => (
           <NavbarItem key={page.href} isActive={page.href === currentPage}>
@@ -66,7 +66,10 @@ export default function PageNavbar() {
 
       <NavbarMenu>
         {pages.map((item) => (
-          <NavbarMenuItem key={`${item.label}-label`}>
+          <NavbarMenuItem
+            key={`${item.label}-label`}
+            isActive={item.href === currentPage}
+          >
             <Link
               className="w-full"
               color="foreground"
