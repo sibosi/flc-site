@@ -13,17 +13,27 @@ const people_data: PeopleType[] = people_json;
 export default function Rolunk() {
   return (
     <div className="space-y-4">
-      <h1>Rólunk</h1>
+      <h1 className="text-center">Rólunk</h1>
+      <div className="relative mx-auto h-64 w-full md:h-80 lg:h-96">
+        <Image
+          src="/people/group.png"
+          alt="FLC logo"
+          fill
+          className="object-cover"
+        />
+      </div>
       <div className="space-y-4">
         <h2>Mi az FLC?</h2>
-        <p>
-          A Financial Literacy Club egy új kezdeményezés az iskolánkban,
-          amelynek lehetőséget biztosít a diákok pénzügyi és gazdasági
-          ismereteinek fejlesztésére. Az FLC keretein belül többek között
-          tanulmányi versenyekre, vendégelőadásokra és céglátogatásokra
-          jelentkezhetnek az Eötvösös diákok, gyakorlati betekintést nyújtva a
-          pénzügyi világba.
-        </p>
+        <div>
+          <p>
+            A Financial Literacy Club egy új kezdeményezés az iskolánkban,
+            amelynek lehetőséget biztosít a diákok pénzügyi és gazdasági
+            ismereteinek fejlesztésére. Az FLC keretein belül többek között
+            tanulmányi versenyekre, vendégelőadásokra és céglátogatásokra
+            jelentkezhetnek az Eötvösös diákok, gyakorlati betekintést nyújtva a
+            pénzügyi világba.
+          </p>
+        </div>
 
         <p>
           A pénzügyi ismereteken túl a klub olyan alapvető készségek
@@ -46,7 +56,7 @@ export default function Rolunk() {
           trading’ platformot hoz létre a tagok számára, díjakért versenyezve.
         </p>
       </div>
-      <div>
+      <div className="w-full">
         <h2>Tagjaink</h2>
         <div className="space-y-4">
           {people_data.map((person, index) => (
@@ -62,8 +72,8 @@ export default function Rolunk() {
                 className="mx-auto object-contain"
               />
               <div>
-                <h3 className="text-center">{person.name}</h3>
-                <p className="mb-2 text-center">{person.position}</p>
+                <h3 className="max-lg:text-center">{person.name}</h3>
+                <p className="mb-2 max-lg:text-center">{person.position}</p>
                 <p>{person.bio}</p>
               </div>
               {index < people_data.length - 1 && (

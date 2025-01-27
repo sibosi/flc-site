@@ -23,29 +23,41 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body
-        className={`bg-selfprimary-bg min-h-screen bg-background font-sans antialiased light:bg-white ${fontOutfit.variable} antialiased`}
+        className={`bg-selfprimary-bg min-h-screen bg-background bg-slate-50 font-sans antialiased ${fontOutfit.variable} antialiased`}
       >
         <Navbar />
         <main className="bg-selfprimary-bg container mx-auto max-w-7xl flex-grow px-3 pt-4 md:px-6 lg:px-12">
           {children}
         </main>
 
-        <footer className="flex items-center justify-center gap-4 p-4">
-          <Link href="github.com/sibosi" className="inline-flex gap-2">
-            <Image
-              src="/icons/github.svg"
-              alt="GitHub - Simon Nimród"
-              width={20}
-              height={20}
-            />
-          </Link>
-          <Link href="instagram.com/simon.nimrod" className="inline-flex gap-2">
+        <footer className="grid grid-cols-2 items-center justify-center divide-x-2 divide-slate-900 p-4">
+          <Link
+            href="https://instagram.com/e5vos.technikusi.szervezet"
+            className="inline-flex justify-end gap-2 px-2"
+          >
             <Image
               src="/icons/instagram.svg"
               alt="Instagram"
               width={20}
               height={20}
             />
+            <span>
+              <strong>FLC</strong> Instagram
+            </span>
+          </Link>
+          <Link
+            href="https://github.com/sibosi"
+            className="inline-flex gap-2 px-2"
+          >
+            <Image
+              src="/icons/github.svg"
+              alt="GitHub - Simon Nimród"
+              width={20}
+              height={20}
+            />
+            <span>
+              <strong>Simon Nimród</strong>
+            </span>
           </Link>
         </footer>
       </body>

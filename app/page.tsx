@@ -28,11 +28,11 @@ const events: EventCardProps[] = [
 export default function Home() {
   return (
     <div className="space-y-4">
-      <h1 className="show my-12 text-center lg:text-5xl">
+      <h1 className="show my-12 text-center text-3xl lg:text-5xl">
         Financial Literacy Club
       </h1>
       <Alert className="show animationDelay-100">
-        <h2>Üdvözlünk!</h2>
+        <h2 className="text-2xl">Üdvözlünk!</h2>
         <p>Minden csütörtökön 15:45-től a földrajz (10.) teremben.</p>
         <p>Téged is várunk a Financial Literacy Club-ban!</p>
       </Alert>
