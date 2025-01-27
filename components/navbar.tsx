@@ -30,7 +30,7 @@ const pages = [
   { href: "/rolunk", label: "Rólunk" },
   { href: "/modulok", label: "Modulok" },
   { href: "/versenyek", label: "Versenyek" },
-  { href: "/oregdiak-progran", label: "Öregdiák program" },
+  { href: "/oregdiak-program", label: "Öregdiák program" },
 ];
 
 export default function PageNavbar() {
