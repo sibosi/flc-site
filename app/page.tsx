@@ -1,3 +1,4 @@
+import Calendar from "@/components/calendar";
 import Alert from "@/components/ui/alert";
 import { EventCardProps, EventCard } from "@/components/ui/EventCard";
 
@@ -51,6 +52,11 @@ export default function Home() {
             />
           ))}
         </div>
+      </div>
+
+      <div>
+        <h2 className="show animationDelay-300">Naptár</h2>
+        <Calendar />
       </div>
     </div>
   );
