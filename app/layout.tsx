@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontOutfit = Outfit({
   variable: "--font-outfit",
@@ -29,6 +30,8 @@ export default function RootLayout({
         <main className="bg-selfprimary-bg container mx-auto max-w-7xl flex-grow px-3 pt-4 md:px-6 lg:px-12">
           {children}
         </main>
+
+        <Analytics />
 
         <footer className="grid grid-cols-2 items-center justify-center divide-x-2 divide-slate-900 p-4">
           <Link
