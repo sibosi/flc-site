@@ -8,7 +8,7 @@ export default function Esemenyek() {
   return (
     <div className="text-center">
       <h1 className="mb-4 text-center">Esemenyek</h1>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid gap-8 lg:grid-cols-3">
         {sortEventsByDate(events).map((event, index) => (
           <EventCard
             title={event.title}
