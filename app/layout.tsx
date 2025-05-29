@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu">
+      <head>
+        <meta name="darkreader-lock" />
+      </head>
       <body
         className={`bg-selfprimary-bg min-h-screen bg-background bg-slate-50 font-sans antialiased ${fontOutfit.variable} antialiased`}
       >

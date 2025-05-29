@@ -2,7 +2,15 @@
 import { Card, CardBody } from "@heroui/react";
 import Image from "next/image";
 
-export interface EventCardProps {
+export interface EventCardType {
+  title: string;
+  description: string;
+  date: string;
+  displayDate: string;
+  image?: string;
+}
+
+interface EventCardProps {
   title: string;
   description: string;
   date: string;
@@ -17,7 +25,7 @@ export function EventCard({
   className,
 }: Readonly<EventCardProps> & { className?: string }) {
   return (
-    <Card className={"max-lg:my-2 lg:w-[30%] " + className}>
+    <Card className={" " + className}>
       <div className="items-center gap-4 sm:flex lg:block">
         <div className="relative h-48 w-full sm:h-full sm:w-48 lg:h-48 lg:w-full">
           <Image
@@ -28,9 +36,11 @@ export function EventCard({
           />
         </div>
         <CardBody>
-          <div>
-            <h3>{title}</h3>
-            <p>{date}</p>
+          <div className="pb-2 pt-0 sm:pt-2 lg:pt-0">
+            <p className="text-4xl font-medium">{title}</p>
+            <p className="mb-1.5 mt-1 font-semibold text-foreground-700">
+              {date}
+            </p>
             <p>{description}</p>
           </div>
         </CardBody>
