@@ -1,30 +1,10 @@
 import Calendar from "@/components/calendar";
 import Alert from "@/components/ui/alert";
-import { EventCardProps, EventCard } from "@/components/ui/EventCard";
+import { EventCardType, EventCard } from "@/components/ui/EventCard";
+import eventsJSON from "@/data/events.json";
+import sortEventsByDate from "@/functions/sortEventsByDate";
 
-const events: EventCardProps[] = [
-  {
-    date: "Október 17. 15:30",
-    title: "Pitch workshop",
-    description:
-      "Ezen a héten egy izgalmas, interaktív foglalkozással készülünk nektek, ahol fejleszthetitek a public speaking skill-t, a pitchelésen keresztül. A sessionön egy rövid ismertetőt hallhattok a pitcheléssel kapcsolatban, utána pedig a befektetések modulon belül fogtok pitcheket tartani.",
-    image: "/events/event1.jpg",
-  },
-  {
-    date: "Október 10. 15:30",
-    title: "Guest Speaker",
-    description:
-      "Nagy Bertalan a privát bankolásról és a befektetésekről átfogóan fog előadást tartani ezen a héten. Megtudhatjátok milyen kockázatok járnak egyes befektetésekkel, valamint milyen vagyonkezelőként dolgozni Magyarország egyik legnagyobb privát bankolási cégénél. Az előadást utólag is megtekinthetitek a modulok tab alatt!",
-    image: "/events/event2.jpg",
-  },
-  {
-    date: "Október 03. 15:45",
-    title: "Guest Speaker",
-    description:
-      "Ezen a héten Sipos Zoltán bankkártya szakértő előadásán vehetünk részt. Az előadás keretein belül megismerkedhettek a bankkártyák evolúciójával és működésükkel, valamint betekintést nyerhettek a bankkártyák világának szolgáltatói oldalába (a bankoknak milyen bevételeik vannak belőlük és hogyan történik a profit-maximalizálás).",
-    image: "/events/event3.jpg",
-  },
-];
+const events = eventsJSON as EventCardType[];
 
 export default function Home() {
   return (
@@ -40,18 +20,29 @@ export default function Home() {
 
       <div>
         <h2 className="show animationDelay-200">Események</h2>
-        <div className="my-2 flex flex-wrap justify-around">
-          {events.map((event, index) => (
-            <EventCard
-              title={event.title}
-              date={event.date}
-              description={event.description}
-              key={index}
-              image={event.image}
-              className={`show animationDelay-${index * 100 + 300}`}
-            />
-          ))}
+        <div className="grid gap-8 lg:grid-cols-3">
+          {sortEventsByDate(events, true)
+            .slice(0, 6)
+            .map((event, index) => (
+              <EventCard
+                title={event.title}
+                date={event.displayDate}
+                description={event.description}
+                key={index}
+                image={event.image}
+                className={`show animationDelay-${index * 100 + 300}`}
+              />
+            ))}
         </div>
+        {events.length > 6 && (
+          <div
+            className={`show mt-4 text-center animationDelay-${6 * 100 + 300}`}
+          >
+            <a href="/esemenyek" className="text-blue-500 hover:underline">
+              További eseményeink
+            </a>
+          </div>
+        )}
       </div>
 
       <div>

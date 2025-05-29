@@ -1,0 +1,121 @@
+[
+  {
+    "displayDate": "Október 17. 15:30",
+    "date": "2024-10-17T13:30:00Z",
+    "title": "Pitch workshop",
+    "description": "Ezen a héten egy izgalmas, interaktív foglalkozással készülünk nektek, ahol fejleszthetitek a public speaking skill-t, a pitchelésen keresztül. A sessionön egy rövid ismertetőt hallhattok a pitcheléssel kapcsolatban, utána pedig a befektetések modulon belül fogtok pitcheket tartani.",
+    "image": "/events/event1.jpg"
+  },
+  {
+    "displayDate": "Október 10. 15:30",
+    "date": "2024-10-10T13:30:00Z",
+    "title": "Guest Speaker",
+    "description": "Nagy Bertalan a privát bankolásról és a befektetésekről átfogóan fog előadást tartani ezen a héten. Megtudhatjátok milyen kockázatok járnak egyes befektetésekkel, valamint milyen vagyonkezelőként dolgozni Magyarország egyik legnagyobb privát bankolási cégénél. Az előadást utólag is megtekinthetitek a modulok tab alatt!",
+    "image": "/events/event2.jpg"
+  },
+  {
+    "displayDate": "Október 03. 15:45",
+    "date": "2024-10-03T13:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Ezen a héten Sipos Zoltán bankkártya szakértő előadásán vehetünk részt. Az előadás keretein belül megismerkedhettek a bankkártyák evolúciójával és működésükkel, valamint betekintést nyerhettek a bankkártyák világának szolgáltatói oldalába (a bankoknak milyen bevételeik vannak belőlük és hogyan történik a profit-maximalizálás).",
+    "image": "/events/event3.jpg"
+  },
+  {
+    "displayDate": "Január 9. 15:45",
+    "date": "2025-01-09T14:45:00Z",
+    "title": "Pénzügyi csalások workshop",
+    "description": "A kicsit interaktívabb jellegű sessionon először olyan, hírhedt pénzügyi csalásokról halottunk előadásokat, mint a Charles Ponzi, Lehman brothers, vagy a Jordan Belfort féle átverések. Ezt követően a jelenlévők, kis csoportokban feldolgozták a különböző témákat, majd adták elő saját véleményüket a hallottakkal kapcsolatban.",
+    "image": "/events/kep1.jpg"
+  },
+  {
+    "displayDate": "November 15. 12:30-15:30",
+    "date": "2024-11-15T11:30:00Z",
+    "title": "Start Akadémia Pályapanoráma program",
+    "description": "Ezen a héten a Start Akadémia által szervezett Pályapanoráma programra látogattunk el, ami a Budapesti Toldy Ferenc Gimnáziumban került megrendezésre. A jelenlévők először két különböző sávban vehettek részt sokszínű, interaktív előadásokon, majd a rendezvény egy networking eseménnyel zárult, ahol a más-más  iskolákból érkező diákoknak lehetőségük nyílt új kapcsolatok kiépítésére is.",
+    "image": "/events/kep2.jpg"
+  },
+  {
+    "displayDate": "November 21. 15:45",
+    "date": "2024-11-21T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Az eheti alkalmunkra Bányi Donátot hívtuk meg, mint vendégelőadót aki az OVB pénzügyi tanácsadói cégtől érkezett hozzánk. Donát a befektetések és értékesítés (sales) témákban tartott egy izgalmas és hasznos előadást, majd arra is kitért, hogy miként lehet a különböző személyiségtípusú embereket felismerni, majd ezt az információt felhasználni az értékesítés folyamata során.",
+    "image": "/events/kep3.jpg"
+  },
+  {
+    "displayDate": "November 28. 15:45",
+    "date": "2024-11-28T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Ezen a héten egy különleges előadót hallgathattunk meg, aki mindössze 20 éves, de már több sikeres online vállalkozást indított. Joseph Tannous megosztotta velünk tapasztalatait arról, hogyan lehet összeegyeztetni a diákéletet az üzleti élet kihívásaival. Mivel Joseph külföldi diák, ezért az előadás angol nyelven zajlott, így diákjainknak lehetőségük nyílt gyakorolni az angol szakmai kifejezéseket, elsősorban a pénzügyi világra vonatkozólag.",
+    "image": "/events/kep4.webp"
+  },
+  {
+    "displayDate": "December 12. 15:45",
+    "date": "2024-12-12T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Eheti alkalmunkra Keserű Balázst hívtuk el, aki “Álommeló” című TV-műsor győzteseként a Cápák között című műsorból ismert Balogh Levente, a Szentkirályi tulajdonosának csapatában dolgozott, és rövid idő alatt ügyvezető igazgatói pozícióig jutott. Balázs mesélt nekünk karrierjéről, tapasztalatairól és arról, milyen volt egy ilyen elismert üzletemberrel együtt dolgozni.",
+    "image": "/events/kep5.webp"
+  },
+  {
+    "displayDate": "Január 11-12.",
+    "date": "2025-01-11T00:00:00Z",
+    "title": "Eötvos National Model United Nations",
+    "description": "Ezen a hétvégén klubunk vezetősége teljes létszámmal vett részt az Eötvös József Gimnázium által rendezett, két napig tartó Model ENSZ konferencián, ahol Budapest különböző iskoláiból érkező diákokkal mérhettük össze diplomáciai készségeinket. Többen is jobbnál jobb díjakkal zártuk a konferenciát, ezzel tovább erősítve a Financial Literacy Club hírnevét.",
+    "image": "/events/kep6.jpg"
+  },
+  {
+    "displayDate": "Január 16. 15:45",
+    "date": "2025-01-16T14:45:00Z",
+    "title": "Pénzügyi versenyek workshop",
+    "description": "Ezen a héten különféle pénzügyi versenyekről tartottunk egy izgalmas workshopot, amelynek keretein belül bemutattuk a különféle lehetőségeket, és beszélgettünk arról, hogyan érdemes felkészülni rájuk.",
+    "image": "/events/kep7.jpg"
+  },
+  {
+    "displayDate": "Január 30. 15:45",
+    "date": "2025-01-30T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Eheti vendégünk Palkó András volt, a Coca Cola volt marketing igazgatója, aki “Mit üzennék a 17 éves önmagamnak - saját vállalkozás vagy 10.000 fős multi?” címmel tartott egy megragadó előadást.",
+    "image": "/events/kep8.webp"
+  },
+  {
+    "displayDate": "Február 20. 15:45",
+    "date": "2025-02-20T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Ezen a héten Farkas Gábor érkezett hozzánk az Alfa PRÉMIUM pénzügyi tanácsadótól. Pénzügyi döntések a hétköznapokban című különleges előadásában olyan témákról beszélt, amelyek nem csak a pénzügyi szektorban dolgozókat, hanem a fiatalabb korosztályt is érintenek.",
+    "image": "/events/kep9.jpg"
+  },
+  {
+    "displayDate": "Március 13. 15:45",
+    "date": "2025-03-13T14:45:00Z",
+    "title": "Továbbtanulás workshop",
+    "description": "Ezen a héten egy továbbtanulásról szóló workshoppal készültünk, annak érdekében hogy megmutassuk az egyetemi tanulás pénzügyi hátterét. Akik eljöttek, azokat legjobb tudásunk szerint igyekeztünk eligazítani az ösztöndíjak, diákhitelek, kollégiumok es az egyetemi diákmunka ingoványában.",
+    "image": "/events/kep10.png"
+  },
+  {
+    "displayDate": "Március 20. 14:30",
+    "date": "2025-03-20T13:30:00Z",
+    "title": "Charity event",
+    "description": "Szokatlan módon az eheti alkalmunkon egy, a Budapest Bike Maffiaval közösen szervezett jótékonysági eseményre került sor. A jelenlévők önkéntes szendvics készítésben vehettek részt, amelyeket azután rászorulókhoz juttattunk. Ezúttal is köszönjük minden FLC tagnak és a külsősöknek is akik a munkájukkal hozzájárultak ehhez a nemes célhoz.",
+    "image": "/events/kep11.png"
+  },
+  {
+    "displayDate": "Március 25. 15:45",
+    "date": "2025-03-25T14:45:00Z",
+    "title": "Guest Speaker",
+    "description": "Ezen a héten egy nagyon izgalmas előadással készültünk, ugyanis a Magyar Nemzeti Banktól jött előadni Nemecskó István-elemző. Az előadás az MNB működéséről szólt, avagy a pénzforgalmat irányító tevékenységeikről és az elektronikus pénzforgalmi stratégiájukról.",
+    "image": "/events/kep12.png"
+  },
+  {
+    "displayDate": "Április 7-8.",
+    "date": "2025-04-07T00:00:00Z",
+    "title": "Céglátogatások",
+    "description": "Idén lehetőségünk volt két céglátogatásra is elvinni a diákjainkat. Április 7-én az Equilor-hoz látogattunk el, ahol még azt a trading floort is megnézhettük, ahol naponta többszáz milliárd forintnyi befektetéseket kezel a cég. Másnap pedig a Continental Autonomous Mobility-ben fogadtak minket ahol egy interaktívabb látogatás keretein belül az önvezető autókról, illetve a mesterséges intelligenciáról esett szó.",
+    "image": "/events/kep13.png"
+  },
+  {
+    "displayDate": "Május 22.",
+    "date": "2025-05-22T00:00:00Z",
+    "title": "Guest Speaker",
+    "description": "Most csütörtökön különleges betekintést nyerhettünk egy vezérigazgatói-tanácsadó rendkívüli karrierútjába. Mészáros-Bugár Márton érkezett hozzánk a Gránit Alapkezelőtől, aki rengeteg hasznos tanácsot és tapasztalatot megosztott velünk, illetve előadása végén egy interaktív beszélgetésre is sor került a különböző továbbtanulási lehetőségekről.",
+    "image": "/events/kep14.jpg"
+  }
+]
