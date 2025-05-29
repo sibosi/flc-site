@@ -1,4 +1,4 @@
-# E5vosDo Site
+# FLC site
 
 This is a website by Nimród Simon for the Financial Literacy Club in the Eötvös József Secondary School.
 
