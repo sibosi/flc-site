@@ -7,7 +7,7 @@ const events = eventsJSON as EventCardType[];
 export default function Esemenyek() {
   return (
     <div className="text-center">
-      <h1 className="mb-4 text-center">Esemenyek</h1>
+      <h1 className="mb-4 text-center">Események</h1>
       <div className="grid gap-8 lg:grid-cols-3">
         {sortEventsByDate(events).map((event, index) => (
           <EventCard
