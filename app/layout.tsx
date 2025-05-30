@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <footer className="grid grid-cols-2 items-center justify-center divide-x-2 divide-slate-900 p-4">
           <Link
-            href="https://instagram.com/e5vos.technikusi.szervezet"
+            href="https://www.instagram.com/flc_ejg"
             className="inline-flex justify-end gap-2 px-2"
           >
             <Image
