@@ -27,7 +27,8 @@ export default function RootLayout({
         <meta name="darkreader-lock" />
       </head>
       <body
-        className={`bg-selfprimary-bg min-h-screen bg-background bg-slate-50 font-sans antialiased ${fontOutfit.variable} antialiased`}
+        className={`bg-selfprimary-bg min-h-screen bg-background bg-slate-50 antialiased ${fontOutfit.variable} antialiased`}
+        style={{ fontFamily: "var(--font-outfit)" }}
       >
         <Navbar />
         <main className="bg-selfprimary-bg container mx-auto max-w-7xl flex-grow px-3 pt-4 md:px-6 lg:px-12">
