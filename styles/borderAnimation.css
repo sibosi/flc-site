@@ -1,0 +1,37 @@
+.sliding-border-animation {
+  position: relative;
+  border: 5px solid transparent;
+  border-radius: 12px;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #1e40af, #9333ea, #ffffff) border-box;
+  animation: slideBorder 2s ease-in-out;
+}
+
+@keyframes slideBorder {
+  0% {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(0deg, #1e40af, #9333ea, #ffffff) border-box;
+  }
+  25% {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(90deg, #1e40af, #9333ea, #ffffff) border-box;
+  }
+  50% {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(180deg, #1e40af, #9333ea, #ffffff) border-box;
+  }
+  75% {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(270deg, #1e40af, #9333ea, #ffffff) border-box;
+  }
+  100% {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(360deg, #1e40af, #9333ea, #ffffff) border-box;
+  }
+}

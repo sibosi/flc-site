@@ -9,7 +9,7 @@ const events = eventsJSON as EventCardType[];
 export default function Home() {
   return (
     <div className="space-y-4">
-      <h1 className="show my-12 text-center text-3xl md:text-5xl">
+      <h1 className="show my-12 hidden text-center text-3xl md:text-5xl">
         Financial Literacy Club
       </h1>
 

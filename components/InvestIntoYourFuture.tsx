@@ -3,6 +3,7 @@ import Image from "next/image";
 import { DM_Serif_Text } from "next/font/google";
 import FLC_logo from "@/public/FLC logo no text.png";
 import US_Embassy_logo from "@/public/use-hungary-seal.png";
+import "@/styles/borderAnimation.css";
 
 const fontDMSerifText = DM_Serif_Text({
   variable: "--font-dm-serif-text",
@@ -12,70 +13,126 @@ const fontDMSerifText = DM_Serif_Text({
 
 const InvestIntoYourFuture = () => {
   return (
-    <div className="rounded-2xl px-4 py-8 shadow-lg">
-      <div className="mb-10 text-center">
-        <h1 className="mx-auto mb-6 w-fit text-left text-6xl font-bold">
-          <span className="font-bold text-purple-600">Fektess</span>
-          <br />
-          <span
-            className={`leading-tight tracking-wider text-blue-800 ${fontDMSerifText.variable}`}
-            style={{ fontFamily: "var(--font-dm-serif-text)" }}
-          >
-            a jövődbe.
-          </span>
-        </h1>
+    <div className="sliding-border-animation rounded-2xl bg-white px-6 py-10 shadow-2xl">
+      <h1 className="mx-auto mb-4 w-fit text-left text-5xl font-bold md:text-6xl">
+        <span className="font-bold text-purple-600">Fektess</span>
+        <br />
+        <span
+          className={`leading-tight tracking-wider text-blue-800 ${fontDMSerifText.variable}`}
+          style={{ fontFamily: "var(--font-dm-serif-text)" }}
+        >
+          a jövődbe.
+        </span>
+      </h1>
 
-        <div className="mb-4 flex items-center justify-center gap-4">
-          <div className="w-28">
-            <Image
-              src={FLC_logo}
-              alt="Financial Literacy Club Logo"
-              width={112}
-              height={112}
-              className="rounded-full"
-            />
-            <span className="ml-2 text-blue-950">Financial Literacy Club</span>
-          </div>
-          <span
-            className={`pb-12 leading-tight tracking-wider ${fontDMSerifText.variable}`}
-            style={{ fontFamily: "var(--font-dm-serif-text)" }}
-          >
-            x
+      <div className="mb-4 flex items-center justify-center gap-6 text-center">
+        <div className="w-28">
+          <Image
+            src={FLC_logo}
+            alt="Financial Literacy Club Logo"
+            width={112}
+            height={112}
+            className="rounded-full border border-gray-300 shadow-md transition-transform duration-300 hover:scale-105"
+          />
+          <span className="mt-2 block text-sm font-medium text-blue-950">
+            Financial Literacy Club Budapest
           </span>
-          <div className="w-28">
-            <Image
-              src={US_Embassy_logo}
-              alt="US Embassy Logo"
-              width={112}
-              height={112}
-              className="rounded-full"
-            />
-            <span className="ml-2 text-blue-950">
-              U.S. Embassy Youth Council
-            </span>
-          </div>
         </div>
-
-        <div className="mt-6">
-          <a
-            href="https://form.jotform.com/251243183705351"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-700"
+        <span
+          className={`pb-12 leading-tight tracking-wider ${fontDMSerifText.variable}`}
+          style={{ fontFamily: "var(--font-dm-serif-text)" }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            className="text-blue-600 transition-transform duration-300 hover:scale-110"
           >
-            Jelentkezés itt
-          </a>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+          </svg>
+        </span>
+        <div className="w-28">
+          <Image
+            src={US_Embassy_logo}
+            alt="US Embassy Logo"
+            width={112}
+            height={112}
+            className="rounded-full shadow-md transition-transform duration-300 hover:scale-105"
+          />
+          <span className="mt-2 block text-sm font-medium text-blue-950">
+            U.S. Embassy Youth Council
+          </span>
         </div>
       </div>
 
-      <div className="md:flex">
+      <div className="mt-8 md:flex md:gap-4">
         <div className="mb-8">
-          <p className="mb-4 text-lg">
+          <div className="mb-4 flex flex-wrap gap-4 max-md:flex-col md:justify-around">
+            <div className="flex rounded-xl bg-indigo-100 p-4 text-blue-950 shadow-md">
+              <div className="mr-4 flex-shrink-0 text-purple-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  <strong>Európa Pont</strong>, Budapest, Lövőház u.
+                </p>
+                <p>
+                  <strong>június 18. (szerda)</strong>, 10:30 – 15:00
+                </p>
+              </div>
+            </div>
+
+            <div className="flex rounded-xl bg-green-100 p-4 text-blue-950 shadow-md">
+              <div className="mr-4 flex-shrink-0 text-green-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                  <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  <strong>Igazolható</strong> tanulmányi eseményként
+                </p>
+                <p>
+                  <strong>Ingyenes</strong>, de regisztrációhoz kötött!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-4 flex justify-center">
+            <a
+              href="https://form.jotform.com/251243183705351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-bold text-white shadow-lg transition duration-300 hover:scale-105"
+            >
+              Jelentkezés itt
+            </a>
+          </div>
+
+          <p className="mb-4 text-lg leading-relaxed text-gray-800">
             Nagy örommel hívunk meg Benneteket a Budapest Financial Literacy
             Club különleges eseményére, amelyet 2025. június 18-án tartunk az
             Európa Pontban!
           </p>
-          <p className="mb-4 text-lg">
+          <p className="mb-4 text-lg leading-relaxed text-gray-800">
             Ez az <span className="font-bold">INGYENES</span> program elsősorban
             középiskolásoknak szól, és olyan témákat jár körül, mint:
           </p>
@@ -104,215 +161,6 @@ const InvestIntoYourFuture = () => {
               </span>
             </li>
           </ul>
-        </div>
-
-        <div className="mb-8 rounded-lg bg-blue-100 p-6">
-          <p className="mb-2">
-            <span className="text-blue-600">📍</span>{" "}
-            <span className="font-semibold">Helyszín:</span> Európa Pont
-            (Budapest, Lövőház u. 35.)
-          </p>
-          <p className="mb-2">
-            <span className="text-blue-600">📅</span>{" "}
-            <span className="font-semibold">Időpont:</span> 2025. június 18.
-            (szerda), 10:30 – 15:00
-          </p>
-          <p className="mb-2">
-            <span className="text-green-600">✔</span> Igazolható tanulmányi
-            eseményként
-          </p>
-          <p className="mb-2">
-            <span className="text-blue-600">🎟</span>{" "}
-            <span className="font-semibold">Részvétel:</span> Ingyenes, de
-            regisztrációhoz kötött!
-          </p>
-        </div>
-      </div>
-
-      <div className="mb-12">
-        <h2 className="mb-6 text-2xl font-bold text-blue-800">Program:</h2>
-
-        <div className="mb-8 border-l-4 border-blue-200 p-4">
-          <h3 className="mb-2 text-xl font-semibold">
-            🕧 10:30 – 11:10: Regisztráció
-          </h3>
-        </div>
-
-        <div className="mb-8 rounded-lg bg-blue-100 p-6">
-          <h3 className="mb-2 text-xl font-semibold text-blue-800">
-            🎓 „Továbbtanulás – Itthon vagy külföldön?&quot;
-          </h3>
-          <p className="mb-4 text-lg font-medium text-blue-700">
-            🕚 11:10 – 12:00
-          </p>
-          <p className="mb-3">
-            Merre érdemes továbbtanulni? Mit nyújtanak a hazai és a külföldi
-            egyetemek, és hogyan lehet eligazodni a lehetőségek között?
-          </p>
-          <p className="mb-3">
-            Ebben a panelbeszélgetésben három különböző szemléletet és
-            tapasztalatot képviselő szakértő segít választ találni:
-          </p>
-          <ul className="mb-4 ml-4 space-y-2">
-            <li>🎙 Bíró Ágota (Engame Academy)</li>
-            <li>🎙 Simon Zoltán (EducationUSA)</li>
-            <li>🎙 Kelecsényi Judit (MCC)</li>
-          </ul>
-          <p className="mb-3">
-            👥 <span className="font-semibold">Moderátorok:</span> Bartók
-            Márton, Balogh Bendegúz (Financial Literacy Club társalapítók)
-          </p>
-          <p className="mb-3">
-            👉 40 perc izgalmas beszélgetés után 10 perc Q&A – kérdezz bátran,
-            ha benned is felmerült már, hogy merre tovább!
-          </p>
-        </div>
-
-        <div className="mb-8 border-l-4 border-blue-200 p-4">
-          <h3 className="mb-2 text-xl font-semibold">
-            🕧 12:00 – 12:30: Szünet
-          </h3>
-          <p>
-            A szünet során a résztvevő diákok a meghívott intézmények
-            standjainál érdeklődhetnek, kapcsolatokat építhetnek.
-          </p>
-        </div>
-
-        <div className="mb-8 rounded-lg bg-blue-100 p-6">
-          <h3 className="mb-2 text-xl font-semibold text-blue-800">
-            🚀 „Vállalkozás – Az első lépések és a siker kulcsai&quot;
-          </h3>
-          <p className="mb-4 text-lg font-medium text-blue-700">
-            🕧 12:30 – 13:20
-          </p>
-          <p className="mb-3">
-            Mi kell ahhoz, hogy egy ötletből valódi vállalkozás legyen? Lehet-e
-            már középiskolásként elindulni ezen az úton? Hogyan gondolkodik egy
-            fiatal vállalkozó?
-          </p>
-          <p className="mb-3">
-            Ebben a panelbeszélgetésben több sikeres startup-alapító osztja meg
-            tapasztalatait és tanácsait:
-          </p>
-          <ul className="mb-4 ml-4 space-y-2">
-            <li>🎙 Keserű Balázs</li>
-            <li>🎙 László Miklós (Diverzum)</li>
-            <li>🎙 További meghívott előadó (hamarosan)</li>
-          </ul>
-          <p className="mb-3">
-            👤 <span className="font-semibold">Moderátor:</span> Golovics Milán
-            (Forbes)
-          </p>
-          <p className="mb-3">Témák, amelyekről biztosan hallhatunk majd:</p>
-          <ul className="mb-4 ml-4 space-y-2">
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>Milyen lépések vezetnek egy működő vállalkozásig?</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>
-                Mikor és hogyan érdemes elindítani egy startupot – akár iskola
-                mellett?
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>Mi segít a legtöbbet: készségek, mindset, mentorok?</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>
-                Milyen buktatókkal érdemes számolni, és mit lehet belőlük
-                tanulni?
-              </span>
-            </li>
-          </ul>
-          <p className="mb-3">
-            👉 40 perc inspiráló beszélgetés, 10 perc közönségkérdés – kérdezz,
-            ha már motoszkál benned egy ötlet, vagy csak kíváncsi vagy, hogyan
-            érdemes belevágni!
-          </p>
-        </div>
-
-        <div className="mb-8 border-l-4 border-blue-200 p-4">
-          <h3 className="mb-2 text-xl font-semibold">
-            🕧 13:20 – 13:50: Szünet
-          </h3>
-          <p>
-            A szünet során a résztvevő diákok a meghívott intézmények
-            standjainál érdeklődhetnek, kapcsolatokat építhetnek.
-          </p>
-        </div>
-
-        <div className="mb-8 rounded-lg bg-blue-100 p-6">
-          <h3 className="mb-2 text-xl font-semibold text-blue-800">
-            🎤 „Mit üzennék a 17 éves önmagamnak, 10.000 fős nagyvállalat vagy
-            saját vállalkozás?&quot;
-          </h3>
-          <p className="mb-4 text-lg font-medium text-blue-700">
-            🕑 13:50 – 14:40
-          </p>
-          <p className="mb-3">🎙 Palkó András (Special Effects)</p>
-          <p className="mb-3">
-            💡 Multinál dolgozni, csatlakozni egy magyar céges csapathoz, vagy
-            saját vállalkozásba kezdeni? Mit érdemes választani – és mikor?
-          </p>
-          <p className="mb-3">
-            Egy inspiráló előadás Palkó Andrástól, aki mindhárom területen
-            szerzett személyes tapasztalatot:
-          </p>
-          <ul className="mb-4 ml-4 space-y-2">
-            <li>🏢 nemzetközi nagyvállalat</li>
-            <li>🏠 hazai középvállalat</li>
-            <li>🚀 saját vállalkozás</li>
-          </ul>
-          <p className="mb-3">
-            Az előadásban több szemponton át hasonlítja össze a tapasztalatait a
-            3 üzleti szférából, szó lesz többek között:
-          </p>
-          <ul className="mb-4 ml-4 space-y-2">
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>jövedelmi lehetőségekről</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>önállóságról és döntési szabadságról</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>céges kultúráról és munkaköri rugalmasságról</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>képzettség és karrierépítés viszonyáról</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-blue-600">🔹</span>
-              <span>work-life balance-ról</span>
-            </li>
-          </ul>
-          <p className="mb-3">
-            👉 Tedd fel magadnak a kérdést: milyen jövőt képzelsz el? Ez az
-            előadás segít tisztábban látni a válaszokat!
-          </p>
-        </div>
-      </div>
-
-      <div className="rounded-lg bg-blue-100 p-8 text-center">
-        <h2 className="mb-6 text-2xl font-bold text-blue-800">
-          Ne maradj le erről az egyedülálló lehetőségről!
-        </h2>
-        <div>
-          <a
-            href="https://form.jotform.com/251243183705351"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-700"
-          >
-            Jelentkezz most!
-          </a>
         </div>
       </div>
     </div>
