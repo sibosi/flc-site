@@ -295,7 +295,7 @@ const InvestIntoYourFuture = () => {
                     {[
                       "Keserű Balázs",
                       "László Miklós (Diverzum)",
-                      "További meghívott előadó (hamarosan)",
+                      "Kirill Perepelica (Munch)",
                     ].map((speaker, index) => (
                       <div
                         key={index}
