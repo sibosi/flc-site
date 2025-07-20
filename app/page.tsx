@@ -1,7 +1,7 @@
 import Calendar from "@/components/calendar";
+import Alert from "@/components/ui/alert";
 import { EventCardType, EventCard } from "@/components/ui/EventCard";
 import eventsJSON from "@/data/events.json";
-import InvestIntoYourFuture from "@/components/InvestIntoYourFuture";
 import sortEventsByDate from "@/functions/sortEventsByDate";
 
 const events = eventsJSON as EventCardType[];
@@ -9,11 +9,16 @@ const events = eventsJSON as EventCardType[];
 export default function Home() {
   return (
     <div className="space-y-4">
-      <h1 className="show my-12 hidden text-center text-3xl md:text-5xl">
+      <h1 className="show my-12 text-center text-3xl md:text-5xl">
         Financial Literacy Club
       </h1>
 
-      <InvestIntoYourFuture />
+      <Alert className="show animationDelay-100">
+        <h2 className="text-2xl">Üdvözlünk!</h2>
+        <p>
+          Téged is várunk vissza szeptemberben a Financial Literacy Club-ban!
+        </p>
+      </Alert>
 
       <div>
         <h2 className="show animationDelay-200">Események</h2>
